@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_course/Widgets/custom_screen.dart';
+import 'package:responsive_course/Views/dashboard_screen.dart';
 
 void main() {
-  runApp(const MediaQuryTest());
+  runApp(const MyApp());
 }
 
-class MediaQuryTest extends StatelessWidget {
-  const MediaQuryTest({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Responsive UI',
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      home: const CustomScreen(),
+      home: DashboardScreen(),
     );
   }
 }
